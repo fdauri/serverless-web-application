@@ -5,7 +5,7 @@ on:
       ENVIRONMENT_TYPE: 
         description: 'Environment: dev, test, or prod'
         required: true
-        default: 'dev'
+        default: 'prod'
       APP_NAME_PREFIX: 
         description: 'Prefix to be used in naming Azure resources'
         required: true
@@ -13,15 +13,15 @@ on:
       RESOURCE_GROUP_NAME: 
         description: 'Resource Group to deploy Azure resources'
         required: true
-        default: 'resource-group'
+        default: 'CSU_Dev_Serverless'
       API_NAME: 
         description: 'API name'
         required: true
-        default: '2do'
+        default: 'todoapi'
       API_DOCUMENT_URL: 
         description: 'API definition URL'
         required: true
-        default: 'https://<fuction-name>.azurewebsites.net/api/swagger.json'
+        default: 'https://todoapifra.azurewebsites.net/api/swagger.json'
       APIM_NAME: 
         description: 'APIM name'
         required: true
@@ -29,11 +29,11 @@ on:
       FUNCTION_NAME: 
         description: 'Azure Functions name'
         required: true
-        default: 'function-name'
+        default: 'todofunctionappfra'
       ORIGIN_URL: 
         description: 'Client app URL' # This is CDN endpoint URL
         required: true
-        default: 'https://<cdn-endpoint-name>.azureedge.net'              
+        default: 'https://todoappfra.azureedge.net'              
   
 # CONFIGURATION
 # For help, go to https://github.com/Azure/Actions
