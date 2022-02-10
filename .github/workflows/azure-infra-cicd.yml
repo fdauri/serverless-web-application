@@ -5,27 +5,27 @@ on:
       AZURE_REGION: 
         description: 'Azure Region to deploy Azure resources'
         required: true    
-        default: 'azure-region'  
+        default: 'northeurope'  
       ENVIRONMENT_TYPE: 
         description: 'Environment: dev, test, or prod'
         required: true
-        default: 'dev'
+        default: 'prod'
       APP_NAME_PREFIX: 
         description: 'Prefix to be used in naming Azure resources'
         required: true
-        default: 'prefix'
+        default: 'fra'
       RESOURCE_GROUP_NAME: 
         description: 'Resource Group to deploy Azure resources'
         required: true
-        default: 'resource-group'
+        default: 'CSU_Dev_Serverless'
       MSI_NAME: 
         description: 'User Managed Identity'
         required: true
-        default: 'user-msi'
+        default: 'fraserverless-msi'
       MSI_RESOURCE_GROUP: 
         description: 'Resource Group where User Managed Identity is located'
         required: true
-        default: 'msi-resource-group'
+        default: 'northeurope'
   
 # CONFIGURATION
 # For help, go to https://github.com/Azure/Actions
